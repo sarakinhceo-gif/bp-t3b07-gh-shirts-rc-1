@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+    <meta name="description" content="공항 셔츠룸 정보. 깔끔한 시스템, 완벽한 서비스. 지금 바로 전화주세요. 010-6279-0862">
+    <meta name="keywords" content="공항 셔츠룸, 공항 셔츠룸 추천, 인천공항 셔츠룸, 김포공항 셔츠룸, 셔츠룸 정보, 공항 유흥">
+    <title>공항 셔츠룸 추천 | 정보</title>
+    <link rel="canonical" href="https://t3b07-gh-shirts-rc-1.vercel.app/info">
+    <meta property="og:title" content="공항 셔츠룸 추천 | 정보">
+    <meta property="og:description" content="공항 셔츠룸 정보. 깔끔한 시스템, 완벽한 서비스. 지금 바로 전화주세요.">
+    <meta property="og:type" content="website">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; background-color: #0a0a0a; color: #f5f5f5; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.02em; }
+        h1 { font-size: 2.5rem; line-height: 1.2; }
+        h2 { font-size: 1.8rem; margin-bottom: 1rem; }
+        h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+        p { margin-bottom: 1rem; font-size: 1rem; }
+        a { color: #e0a800; text-decoration: none; }
+        a:hover { color: #ffc107; }
+        header { background: #111; border-bottom: 1px solid #222; padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .logo { font-size: 1.5rem; font-weight: 800; color: #e0a800; text-transform: uppercase; }
+        .logo span { color: #f5f5f5; }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav ul li a { color: #f5f5f5; font-weight: 500; font-size: 0.95rem; transition: color 0.2s; }
+        nav ul li a:hover { color: #e0a800; }
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; background: none; border: none; }
+        .hamburger span { width: 25px; height: 2px; background: #f5f5f5; transition: 0.3s; }
+        @media (max-width: 768px) {
+            .hamburger { display: flex; }
+            nav ul { display: none; flex-direction: column; background: #111; position: absolute; top: 100%; left: 0; width: 100%; padding: 1rem; gap: 1rem; }
+            nav ul.active { display: flex; }
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.4rem; }
+        }
+        .tel-link { display: inline-block; background: #e0a800; color: #0a0a0a; padding: 0.6rem 1.5rem; border-radius: 4px; font-weight: 700; font-size: 1.1rem; transition: background 0.2s; }
+        .tel-link:hover { background: #ffc107; color: #0a0a0a; }
+        .hero { padding: 4rem 0; text-align: center; }
+        .hero h1 { margin-bottom: 1rem; }
+        .hero p { font-size: 1.1rem; color: #aaa; max-width: 700px; margin: 0 auto 2rem; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0; }
+        .info-card { background: #141414; border: 1px solid #222; border-radius: 8px; padding: 2rem; transition: transform 0.2s, border-color 0.2s; }
+        .info-card:hover { transform: translateY(-4px); border-color: #e0a800; }
+        .info-card h3 { color: #e0a800; margin-bottom: 1rem; }
+        .info-card p { color: #ccc; }
+        .info-card .highlight { color: #f5f5f5; font-weight: 600; }
+        .faq-section { padding: 3rem 0; }
+        .faq-item { border-bottom: 1px solid #222; padding: 1.5rem 0; }
+        .faq-item h4 { cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-item p { color: #aaa; margin-top: 0.5rem; }
+        .cta-section { background: linear-gradient(135deg, #111 0%, #1a1a1a 100%); padding: 4rem 0; text-align: center; margin: 3rem 0; border-radius: 8px; }
+        .cta-section h2 { margin-bottom: 1rem; }
+        .cta-section p { color: #aaa; margin-bottom: 2rem; }
+        footer { background: #111; border-top: 1px solid #222; padding: 2rem 0; text-align: center; color: #666; font-size: 0.9rem; }
+        footer a { color: #e0a800; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">T3B07<span>SHIRTS</span></div>
+            <button class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('active')">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/info">정보</a></li>
+                    <li><a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>공항 셔츠룸,<br>진짜 정보는 여기다</h1>
+                <p>인천공항부터 김포까지. 시스템, 가격, 분위기. 네가 원하는 모든 걸 까발린다. 가짜 리뷰는 집어치워.</p>
+                <a href="tel:010-6279-0862" class="tel-link">📞 지금 전화: 010-6279-0862</a>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>공항 셔츠룸, 뭘 믿고 가야 하냐?</h2>
+            <p>야, 공항 셔츠룸이라고 다 같은 게 아니다. 인천공항 셔츠룸은 시스템이 깔끔해야 제맛이고, 김포공항 셔츠룸은 접근성이 생명이다. 여기 T3B07은 그 두 개를 다 잡았다. 왜? 직접 보고 판단해라.</p>
+        </section>
+
+        <section class="container info-grid">
+            <div class="info-card">
+                <h3>📍 인천공항 셔츠룸</h3>
+                <p>인천 쪽은 규모가 다르다. 넓은 공간, 체계적인 시스템. <span class="highlight">VIP 룸 완비</span>, 프라이빗한 분위기. 공항에서 10분 거리, 픽업 가능.</p>
+            </div>
+            <div class="info-card">
+                <h3>📍 김포공항 셔츠룸</h3>
+                <p>김포는 속도전이다. 접근성 끝판왕, <span class="highlight">예약제로 대기시간 제로</span>. 비즈니스맨들이 왜 여기 꽂히는지 알겠지? 시간이 돈이다.</p>
+            </div>
+            <div class="info-card">
+                <h3>⚙️ 시스템 & 서비스</h3>
+                <p>깔끔한 시스템? 기본이다. <span class="highlight">음료 무제한, 최신 사운드, 프리미엄 안주</span>. 서비스가 다르면 결과가 다르다. 체험해봐라.</p>
+            </div>
+            <div class="info-card">
+                <h3>💰 가격 & 혜택</h3>
+                <p>가격에 속지 마라. 싼 게 비지떡이다. T3B07은 <span class="highlight">합리적인 가격에 프리미엄 퀄리티</span>를 약속한다. 첫 방문 할인 이벤트 중.</p>
+            </div>
+        </section>
+
+        <section class="container faq-section">
+            <h2>자주 묻는 질문 — 솔직하게 답한다</h2>
+            <div class="faq-item">
+                <h4>공항 셔츠룸은 처음인데, 뭘 준비해야 하냐? <span>+</span></h4>
+                <p>걱정하지 마라. 전화 한 통이면 끝이다. 예약, 픽업, 시스템 안내까지 다 해준다. 번호는 010-6279-0862. 부담 없이 걸어라.</p>
+            </div>
+            <div class="faq-item">
+                <h4>인천공항 셔츠룸 vs 김포공항 셔츠룸, 뭐가 더 낫냐? <span>+</span></h4>
+                <p>목적에 따라 다르다. 인천은 규모와 프라이버시, 김포는 속도와 접근성. T3B07은 두 곳 모두 운영한다. 네 취향에 맞게 골라라.</p>
+            </div>
+            <div class="faq-item">
+                <h4>시스템이 진짜 깔끔하냐? 거짓말 아니냐? <span>+</span></h4>
+                <p>직접 와서 확인해라. 말로 설명하는 것보다 백 배 낫다. 시스템이 구리면 전화 받지도 않는다. 그만큼 자신 있다.</p>
+            </div>
+            <div class="faq-item">
+                <h4>가격대가 어떻게 되냐? <span>+</span></h4>
+                <p>기본 패키지부터 프리미엄까지 다양하다. 정확한 건 전화로 물어봐라. 여기 적기엔 경우가 너무 많다. 010-6279-0862로 전화해라.</p>
+            </div>
+        </section>
+
+        <section class="container cta-section">
+            <h2>지금 바로 전화해라</h2>
+            <p>망설이는 사이에 예약은 차버린다. 인천공항 셔츠룸, 김포공항 셔츠룸. 네 선택을 후회하지 않게 만들어준다.</p>
+            <a href="tel:010-6279-0862" class="tel-link" style="font-size: 1.3rem; padding: 0.8rem 2rem;">📞 010-6279-0862</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© T3B07 SHIRTS ROOM | 공항 셔츠룸 추천 No.1 | <a href="tel:010-6279-0862">010-6279-0862</a></p>
+            <p>인천공항 셔츠룸 · 김포공항 셔츠룸 | 깔끔한 시스템, 완벽한 서비스</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-item h4').forEach(item => {
+            item.addEventListener('click', () => {
+                const p = item.nextElementSibling;
+                const span = item.querySelector('span');
+                if (p.style.display === 'block') {
+                    p.style.display = 'none';
+                    span.textContent = '+';
+                } else {
+                    p.style.display = 'block';
+                    span.textContent = '−';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
